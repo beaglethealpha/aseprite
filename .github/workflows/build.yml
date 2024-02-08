@@ -1,8 +1,9 @@
-ame: Build and deploy Aseprite
+name: Build and deploy Aseprite
 
 on:
+  workflow-dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 *n * *'
   push:
     branches:
       - master
